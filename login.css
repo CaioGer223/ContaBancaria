@@ -1,0 +1,189 @@
+body{
+    padding: .8rem;
+}
+
+/* TELA INICIAL */
+header{
+    background-color: #8a2be2;
+
+}
+
+header > h1{
+    color: #ffffff;
+}
+
+main{
+    background-color: #fff;
+    height: 45vw;
+}
+
+h1{     
+    margin-left: 2rem;
+    text-shadow: 0 0 10px #fff;
+    margin-bottom: 10px;
+}
+
+#Picture{
+    background-color: #a65fe9;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    padding: .4rem;
+    margin: 1rem;
+    margin-left: 1rem;
+    width: 5rem;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+#btnSaldo{
+    background: none;
+    border: none;
+    float: right;
+}
+
+#btnSaldo:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+
+}
+
+/*Tela de Saque */
+
+#abrir-popupSaque:checked ~ #SaquePage {
+  display: block;
+}
+
+#fechar-popupSaque:checked ~ #SaquePage, #fechar-popupSaque:checked ~ #fechar-popupSaque-btn{
+  display: none;
+}
+
+#abrir-popupSaque-btn {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 50%;
+  background: #e4e4e4;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+}
+
+#fechar-popupSaque-btn {
+  background-color: #00000020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#SaquePage{
+  box-sizing: border-box;
+  position: fixed;
+  width: min(380px, 90vw);
+  height: 180px;
+  left: max(calc(50vw - 380px / 2), 4vw);
+  top: calc(50vh - 80px);
+  padding: 22px;
+  background-color: #a65fe9;
+  border: 2px solid #c59fde;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px -5px #0000003c;
+}
+
+/*Tela de Deposito */
+
+  #abrir-popupDeposito:checked ~ #DepositoPage {
+  display: block;
+}
+
+#fechar-popupDeposito:checked ~ #DepositoPage, #fechar-popupDeposito:checked ~ #fechar-popupDeposito-btn{
+  display: none;
+}
+
+#abrir-popupDeposito-btn {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 50%;
+  background: #e4e4e4;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+}
+
+#fechar-popupDeposito-btn {
+  background-color: #00000020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#DepositoPage{
+  box-sizing: border-box;
+  position: fixed;
+  width: min(380px, 90vw);
+  height: 140px;
+  left: max(calc(50vw - 380px / 2), 4vw);
+  top: calc(50vh - 80px);
+  padding: 15px;
+  background-color: #a65fe9;
+  border: 2px solid #c59fde;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px -5px #0000003c;
+}
+
+/*Tela de Listar Contas */
+
+#abrir-popupLista:checked ~ #ListarContasPage {
+  display: block;
+}
+
+#fechar-popupLista:checked ~ #ListarContasPage, #fechar-popupLista:checked ~ #fechar-popupLista-btn{
+  display: none;
+}
+
+#abrir-popupLista-btn {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 50%;
+  background: #e4e4e4;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+}
+
+#fechar-popupLista-btn {
+  background-color: #00000020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#ListarContasPage{
+box-sizing: border-box;
+position: fixed;
+width: min(380px, 90vw);
+height: 140px;
+left: max(calc(50vw - 380px / 2), 4vw);
+top: calc(50vh - 80px);
+padding: 15px;
+background-color: #a65fe9;
+border: 2px solid #c59fde;
+border-radius: 8px;
+box-shadow: 0px 5px 15px -5px #0000003c;
+}

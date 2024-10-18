@@ -1,0 +1,50 @@
+  /*Tela de Criação de Contas */
+
+  body{
+    background-color: #a65fe9;
+  }
+
+  #titulo{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    cursor: context-menu;
+  }
+
+  p{
+    text-align: center;
+    margin-top: 0;
+    cursor: context-menu;
+  }
+
+  #CriarContaPage{
+    box-sizing: border-box;
+    position: fixed;
+    width: min(380px, 90vw);
+    height: 280px;
+    left: max(calc(50vw - 380px / 2), 4vw);
+    top: calc(50vh - 150px);
+    padding: 22px;
+    background-color: #ffffff;
+    border: 2px solid #c59fde;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px -5px #0000003c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+
+    #nomeCompleto{
+        height: 40px;
+    }
+
+    #criarContaBtn{
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #criarContaBtn:hover{
+        transform: scale(1.06);
+    }

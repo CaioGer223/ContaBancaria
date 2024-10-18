@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Bancário</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon">
+    <script src="scriptLogin.js" defer>
+    </script>
+</head>
+<body>
+    <main id="telaInicial">
+        <header>
+            <picture>
+                <a href="index.html" target="_self"><img src="src/img/picture.png" alt="Icone de Usuário" id="Picture"></a>
+            </picture>
+
+            <button id="btnSaldo">
+                <img src="src/img/olhoOculto.png" alt="Icone Mostrar senha" style="height: 5rem;">
+            </button>
+
+            <h1 id="usuarioNome">Olá Usuário</h1> 
+        </header>
+        
+        <h3 id="numeroContaHTML">Conta: 1001</h3>
+
+        <div id="saldoEmConta">
+            <h2>Saldo: 0</h2>
+        </div>
+            
+        <nav> 
+            <section> <!-- Tela de Depósito -->
+                <input id="abrir-popupDeposito" name="popupDeposito" type="radio" hidden>
+                <input id="fechar-popupDeposito" name="popupDeposito" type="radio" hidden checked>
+
+                <label id="abrir-popupDeposito-btn" for="abrir-popupDeposito">
+                    <div id="Conta"><img src="src/img/Depositar.png" alt="Sacar"></div>
+                </label>
+                <label id="fechar-popupDeposito-btn" for="fechar-popupDeposito"></label>
+
+                <div id="DepositoPage">
+                    <p>Digite o valor do depósito</p>
+                    <input type="number" id="valorDeposito">
+                    <button id="depositarBtn">Depositar</button>
+                    <p id="mensagemDeposito"></p>
+                </div>
+            </section>
+
+             <section> <!-- Tela de Saque -->
+                <input id="abrir-popupSaque" name="popupSaque" type="radio" hidden>
+                <input id="fechar-popupSaque" name="popupSaque" type="radio" hidden checked>
+
+                <label id="abrir-popupSaque-btn" for="abrir-popupSaque">
+                    <div id="Saque"><img src="src/img/Sacar.png" alt="Sacar"></div>
+                </label>
+                <label id="fechar-popupSaque-btn" for="fechar-popupSaque"></label>
+
+                <div id="SaquePage">
+                    <p>Digite o valor que quer sacar</p>
+                    <input type="number" id="valorSaque">
+                    <button id="sacarBtn">Sacar</button>
+                    <p id="mensagemSaque"></p>
+                </div>
+            </section>
+            
+            <section> <!-- Tela de Listar Contas -->
+                <input id="abrir-popupLista" name="popupLista" type="radio" hidden>
+                <input id="fechar-popupLista" name="popupLista" type="radio" hidden checked>
+
+                <label id="abrir-popupLista-btn" for="abrir-popupLista">
+                    <div id="Conta"><img src="src/img/LocalizarContas.png" alt="Sacar"></div>
+                </label>
+                <label id="fechar-popupLista-btn" for="fechar-popupLista"></label>
+
+                <div id="ListarContasPage">
+                    <button id="listarContasBtn">Listar Contas</button>
+                    <p id="mensagemListarContas"></p>
+                </div>
+            </section>
+
+        </nav>
+    </main>
+</body>
+</html>
